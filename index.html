@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cartoon Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1 class="title">🎮 Cartoon Rock Paper Scissors</h1>
+
+    <!-- Mode Selection -->
+    <div class="mode">
+        <button onclick="setMode('ai')">Play with AI</button>
+        <button onclick="setMode('friend')">Play with Friend</button>
+    </div>
+
+    <!-- Game Area -->
+    <div class="game">
+
+        <div class="choices">
+            <button class="choice" onclick="play('rock')">🪨 Rock</button>
+            <button class="choice" onclick="play('paper')">📄 Paper</button>
+            <button class="choice" onclick="play('scissors')">✂️ Scissors</button>
+        </div>
+
+        <h2 id="result">Choose your move!</h2>
+
+        <div class="score">
+            <p>Player: <span id="playerScore">0</span></p>
+            <p id="opponentText">AI: <span id="aiScore">0</span></p>
+        </div>
+
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
